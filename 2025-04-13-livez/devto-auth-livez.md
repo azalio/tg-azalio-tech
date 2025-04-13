@@ -1,3 +1,5 @@
+https://dev.to/azalio/securing-kubernetes-api-server-health-checks-without-anonymous-access-31f9
+
 ---
 title: Securing Kubernetes API Server Health Checks Without Anonymous Access
 tags: [kubernetes, k8s, security, devops, infosec]

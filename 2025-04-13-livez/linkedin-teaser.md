@@ -6,7 +6,7 @@ It turns out there's a way using `AuthenticationConfiguration` introduced via KE
 
 Want to learn how to implement this for a more secure cluster?
 
-➡️ **Read the full deep-dive (English):** [MEDIUM_ARTICLE_URL]
+➡️ **Read the full deep-dive (English):** https://medium.com/@azalio_16174/securing-kubernetes-api-server-health-checks-without-anonymous-access-0be907fbf5e8
 ➡️ **Читайте подробный разбор (на русском):** http://t.me/azalio_tech
 
 #kubernetes #k8s #security #devops #infosec #authentication #apiserver #linkedinpost

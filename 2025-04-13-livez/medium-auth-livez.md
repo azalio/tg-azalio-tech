@@ -1,3 +1,5 @@
+https://medium.com/@azalio_16174/securing-kubernetes-api-server-health-checks-without-anonymous-access-0be907fbf5e8
+
 # Securing Kubernetes API Server Health Checks Without Anonymous Access
 
 ## How to disable anonymous auth globally but keep /livez, /readyz, and /healthz accessible
