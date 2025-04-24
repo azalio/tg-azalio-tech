@@ -15,9 +15,9 @@
 
 Параметр `mountPropagation` у `volumeMounts` имеет 3 режима:
 
-* **None** — полная изоляция (`rprivate`), дефолт.  
-* **HostToContainer** — маунты летят *с хоста → в контейнер* (`rslave`). **Нам нужен именно он.**  
-* **Bidirectional** — маунты ходят в обе стороны (`rshared`). Работает *только* в `privileged`-контейнере, иначе Pod не стартует.
+* **None** - полная изоляция (`rprivate`), дефолт.  
+* **HostToContainer** - маунты летят *с хоста → в контейнер* (`rslave`). **Нам нужен именно он.**  
+* **Bidirectional** - маунты ходят в обе стороны (`rshared`). Работает *только* в `privileged`-контейнере, иначе Pod не стартует.
 
 ---
 
@@ -39,7 +39,7 @@ spec:
       type: Directory
 ```
 
-Теперь каждое *новое* bind-mount событие внутри `/var/lib/kubelet/pods` мгновенно видно агенту — без рестартов.
+Теперь каждое *новое* bind-mount событие внутри `/var/lib/kubelet/pods` мгновенно видно агенту - без рестартов.
 
 ---
 
@@ -54,7 +54,7 @@ spec:
 ### На заметку
 
 * `Bidirectional` опасен в мульти-тенант окружениях: контейнер может пролить маунты *на хост*.  
-* В Kubernetes 1.10 было краткое время, когда [дефолтом неожиданно стал](https://github.com/kubernetes/kubernetes/pull/62462) `HostToContainer`. Если админите древний кластер — проверьте (хотя боюсь вам уже ничего не поможет...).  
+* В Kubernetes 1.10 было краткое время, когда [дефолтом неожиданно стал](https://github.com/kubernetes/kubernetes/pull/62462) `HostToContainer`. Если админите древний кластер - проверьте (хотя боюсь вам уже ничего не поможет...).  
 * Cilium тоже использует этот трюк чтобы [следить](https://github.com/cilium/cilium/blob/v1.17.3/install/kubernetes/cilium/templates/cilium-envoy/daemonset.yaml#L195) за bpf мапами.
 
 ---
@@ -64,4 +64,4 @@ spec:
 • CRI интерфейс: <https://github.com/kubernetes/cri-api/blob/release-1.33/pkg/apis/runtime/v1/api.proto#L226>  
 • man mount: <https://man7.org/linux/man-pages/man8/mount.8.html>
 
-# kubernetes #k8s #mountPropagation #linux #devops #storage
+#kubernetes #k8s #mountPropagation #linux #devops #storage

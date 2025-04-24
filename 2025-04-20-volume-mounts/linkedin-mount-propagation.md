@@ -8,7 +8,7 @@ It leverages the Linux `rslave` propagation mode under the hood.
 
 Want the full technical breakdown and YAML recipe?
 
-➡️ **Read the deep-dive (English):** [Link to Medium/Dev.to post - Placeholder]
-➡️ **Читайте подробный разбор (на русском):** [Link to Telegram post - Placeholder]
+➡️ **Read the deep-dive (English):** [Medium](https://medium.com/@azalio_16174/kubernetes-agent-blind-to-new-mounts-demystifying-mount-propagation-42176595ca6a)
+➡️ **Читайте подробный разбор (на русском):** [tg](https://t.me/azalio_tech/49)
 
 #kubernetes #k8s #devops #linux #storage #mountpropagation #namespaces #linkedinpost
